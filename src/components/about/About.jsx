@@ -9,6 +9,8 @@ import {
   mobileStandOutImage,
 } from "../../assets/images/mobile";
 
+import "./About.css";
+
 const Details = ({
   isMobile,
   mobileImage,
@@ -18,13 +20,11 @@ const Details = ({
   className,
   highlight,
   articleStyle,
-  titleStyle,
-
 }) => {
   return (
-    <div className={`flex flex-col ${className} lg:w-full outline`}>
+    <div className={`about ${className}`}>
       <figure
-        className="min-h-[19.5rem] md:w-[50%] lg:min-h-[37.5rem]"
+        className="about__image"
         style={{
           backgroundImage: `url("${isMobile ? mobileImage : desktopImage}")`,
           backgroundRepeat: "no-repeat",
@@ -32,22 +32,15 @@ const Details = ({
           backgroundSize: "cover",
         }}
       ></figure>
-      <article
-        className={`flex-1 px-6 py-16 text-center lg:text-left ${articleStyle} outline`}
-      >
-        <h3 className={`font-Fraunces text-4xl font-bold text-VeryDarkDesaturatedBlue lg:text-[2.45rem] lg:font-black lg:leading-[3rem] ${titleStyle}`}>
-          {title}
-        </h3>
-        <p className="pb-9 pt-6 text-lg leading-[1.6] text-DarkGrayishBlue lg:pt-4">
-          {description}
-        </p>
-        <a
-          href="#"
-          className={`font-Fraunces uppercase ${highlight} relative font-bold after:absolute after:-bottom-[.1rem] after:-left-1.5 after:z-[-1] after:h-2 after:w-[110%] after:rounded-full after:bg-opacity-40 after:content-[""]`}
-        >
-          Learn More
-        </a>
-      </article>
+      <div className="about__article">
+        <article className={articleStyle}>
+          <h3 className="about__article__title">{title}</h3>
+          <p className="about__article__description">{description}</p>
+          <a href="#" className={`about_article__link ${highlight}`}>
+            Learn More
+          </a>
+        </article>
+      </div>
     </div>
   );
 };
@@ -63,9 +56,9 @@ const About = () => {
         isMobile={isMobile}
         mobileImage={mobileTransformImage}
         desktopImage={desktopTransformImage}
-        className="md:flex-row-reverse"
-        articleStyle="lg:max-w-[450px] -ml-44 self-center"
-        highlight="after:bg-Yellow hover:after:bg-opacity-100"
+        className="about--transform"
+        articleStyle="about__article--transform"
+        highlight="about_article__link--transform"
         title="Transform your brand"
         description="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
       />
@@ -73,8 +66,9 @@ const About = () => {
         isMobile={isMobile}
         mobileImage={mobileStandOutImage}
         desktopImage={desktopStandOutImage}
-        className="md:flex-row"
-        highlight="after:bg-SoftRed hover:after:bg-opacity-100"
+        className="about--stand-out"
+        articleStyle="about__article--stand-out"
+        highlight="about_article__link--stand-out"
         title="Stand out to the right audience"
         description="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places."
       />

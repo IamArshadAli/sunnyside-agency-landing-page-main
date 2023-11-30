@@ -1,0 +1,59 @@
+.about {
+    @apply flex flex-col lg:w-full
+}
+
+.about--transform {
+    @apply md:flex-row-reverse
+}
+
+.about--stand-out {
+    @apply md:flex-row
+}
+
+.about--large {
+    @apply lg:min-h-[37.5rem]
+}
+
+.about__image {
+    @apply min-h-[19.5rem] md:w-[50%] about--large
+}
+
+.about__article {
+    @apply flex-1 px-6 py-16 text-center about--large lg:max-w-[50%] lg:text-left
+}
+
+.about__article--transform {
+    @apply lg:pl-[8.675rem] lg:pt-[6rem] lg:max-w-[37rem]
+}
+
+.about__article--stand-out {
+    @apply lg:pt-[5.9rem] lg:pl-[5.25rem] lg:max-w-[34rem] lg:pb-1
+}
+
+.about__article--bold{
+    @apply font-bold
+}
+
+.about__article__title {
+    @apply font-Fraunces text-4xl about__article--bold text-VeryDarkDesaturatedBlue lg:text-[2.5rem] lg:font-black lg:leading-[1.22em]
+}
+
+.about__article__description {
+    @apply pb-9 pt-6 text-lg leading-[1.6] text-DarkGrayishBlue lg:pb-[2.5rem] lg:pt-8 lg:leading-[1.675]
+}
+
+.about_article__link {
+    @apply  font-Fraunces uppercase relative about__article--bold after:absolute after:-bottom-[.1rem] after:-left-1.5 after:z-[-1] after:h-2 after:w-[110%] after:rounded-full
+}
+
+.article__link--hover {
+    @apply hover:after:bg-opacity-75
+}
+
+.about_article__link--transform {
+    @apply after:bg-Yellow after:bg-opacity-40 article__link--hover lg:ml-2 lg:tracking-wider
+}
+
+.about_article__link--stand-out {
+    @apply after:bg-SoftRed after:bg-opacity-40 article__link--hover lg:ml-2
+}
