@@ -32,10 +32,10 @@
 <!-- Live Site -->
 <div align="center">
 
-  <a href="https://tip-calculator-app-arshad-ali.vercel.app/">
+  <a href="https://sunnyside-agency-landing-page-arshad.netlify.app/">
     <img src="https://img.shields.io/badge/Live_Demo->-9757f1?style=for-the-badge" alt="Live Demo">
   </a> &nbsp;
-  <a href="https://github.com/IamArshadAli/tip-calculator-app">
+  <a href="https://github.com/IamArshadAli/sunnyside-agency-landing-page-main">
     <img src="https://img.shields.io/badge/Solution->-9757f1?style=for-the-badge" alt="Solution">
   </a>
 
@@ -44,12 +44,12 @@
 #
 <!-- Screenshot -->
 <div align="center">
-  <a href="https://tip-calculator-app-arshad-ali.vercel.app/" title="Click to see Live Site">
+  <a href="https://sunnyside-agency-landing-page-arshad.netlify.app/" title="Click to see Live Site">
     <img src="./src/assets/design/desktop-preview.jpg" />
   </a>
 </div>
 
-This is a solution to the [Sunnyside Agency Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside Agency Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <br />
 
@@ -59,11 +59,11 @@ This is a solution to the [Sunnyside Agency Landing Page challenge on Frontend M
 
  ||
   | :-----: |
-  |  <b>Overall Score: 🖥️ 98% \| 📱 94%</b> |
+  |  <b>Overall Score: 🖥️ 93% \| 📱 89%</b> |
   | |
   | <img src='./src/assets/images/pagespeed-insights-score.svg' alt='Scoreboard'> |
   | |
-  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-tip-calculator-app-arshad-ali-vercel-app/0x8uqnp23c?form_factor=desktop) to get live score |
+  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-sunnyside-agency-landing-page-arshad-netlify-app/f7ccouwtc7?form_factor=desktop) to get live score |
   ||
 
 </div>
@@ -74,7 +74,6 @@ This is a solution to the [Sunnyside Agency Landing Page challenge on Frontend M
 
 Your users should be able to:
 
-- [✔️] Calculate the correct tip and total cost of the bill per person
 - [✔️] View the optimal layout for the app depending on their device's screen size
 - [✔️] See hover states for all interactive elements on the page
 
