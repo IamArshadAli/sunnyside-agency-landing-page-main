@@ -1,0 +1,23 @@
+.services {
+    @apply flex flex-col md:flex-row
+}
+
+.services__article {
+    @apply flex min-h-[37.5rem] flex-1 flex-col justify-end px-4 py-16 text-center md:max-h-[19.5rem] lg:items-center
+}
+
+.services__article--graphic-design {
+    @apply text-DarkDesaturatedCyan
+}
+
+.services__article--photography {
+    @apply text-DarkBlue
+}
+
+.services__article__title {
+    @apply font-Fraunces text-3xl font-bold
+}
+
+.services__article__description {
+    @apply mt-8 font-semibold lg:max-w-[22rem] lg:leading-6
+}
