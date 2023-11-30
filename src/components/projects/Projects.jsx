@@ -14,6 +14,8 @@ import {
   mobileGallerySugarCubesImage,
 } from "../../assets/images/mobile";
 
+import "./Projects.css";
+
 const Projects = () => {
   const isMobile = useMediaQuery({
     query: "(max-width:640px)",
@@ -35,7 +37,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="flex min-h-[23.25rem] flex-wrap outline" id="projects">
+    <section className="projects" id="projects">
       {isMobile ? (
         <>
           {projects.mobile.map((item, index) => (
@@ -43,7 +45,7 @@ const Projects = () => {
               key={index}
               src={item}
               alt={index}
-              className="w-1/2 object-cover object-center md:max-h-[22rem] lg:w-[25%]"
+              className="projects__images"
             />
           ))}
         </>
@@ -54,7 +56,7 @@ const Projects = () => {
               key={index}
               src={item}
               alt={index}
-              className="w-1/2 object-cover object-center md:max-h-[22rem] lg:w-[25%]"
+              className="projects__images"
             />
           ))}
         </>

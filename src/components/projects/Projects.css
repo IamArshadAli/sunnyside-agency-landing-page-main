@@ -1,0 +1,7 @@
+.projects {
+    @apply flex min-h-[23.25rem] flex-wrap lg:max-h-[28rem]
+}
+
+.projects__images {
+    @apply w-1/2 object-cover object-center md:max-h-[22rem] lg:max-h-full lg:w-[25%]
+}
