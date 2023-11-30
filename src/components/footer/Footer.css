@@ -1,0 +1,23 @@
+.footer {
+    @apply flex min-h-[21.75rem] flex-col items-center bg-DarkModerateCyan bg-opacity-75 py-16 lg:py-[4.85rem]
+}
+
+.footer__logo {
+    @apply mb-8 scale-[1.375] fill-DarkDesaturatedCyan lg:-ml-3
+}
+
+.footer__nav {
+    @apply mb-24 flex gap-[3.5rem] text-lg text-DarkDesaturatedCyan lg:mt-3
+}
+
+.footer__nav__link {
+    @apply hover:text-White
+}
+
+.footer__social {
+    @apply flex gap-8 lg:-mt-3 lg:gap-7
+}
+
+.footer__social__icon {
+    @apply fill-DarkDesaturatedCyan hover:fill-White
+}

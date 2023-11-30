@@ -6,33 +6,36 @@ import {
   SunnysideLogo,
 } from "../../utils/svgIcons";
 
+import "./Footer.css";
+
 const Footer = () => {
   return (
-    <footer
-      className="flex min-h-[21.75rem] flex-col items-center bg-DarkModerateCyan bg-opacity-75 py-16"
-      id="contact"
-    >
-      <SunnysideLogo
-        width={124}
-        height={24}
-        className="mb-8 fill-DarkDesaturatedCyan"
-      />
-      <ul className="mb-24 flex gap-[3.5rem] text-lg text-DarkDesaturatedCyan">
-        <li className="hover:text-White">
+    <footer className="footer" id="contact">
+      <SunnysideLogo width={124} height={24} className="footer__logo" />
+      <ul className="footer__nav">
+        <li className="footer__nav__link">
           <a href="#about">About</a>
         </li>
-        <li className="hover:text-White">
+        <li className="footer__nav__link">
           <a href="#services">Services</a>
         </li>
-        <li className="hover:text-White">
+        <li className="footer__nav__link">
           <a href="#projects">Projects</a>
         </li>
       </ul>
-      <div className="flex gap-8">
-        <FacebookIcon />
-        <InstagramIcon />
-        <TwitterIcon />
-        <PinterestIcon />
+      <div className="footer__social">
+        <a href="#">
+          <FacebookIcon className="footer__social__icon" />
+        </a>
+        <a href="#">
+          <InstagramIcon className="footer__social__icon" />
+        </a>
+        <a href="#">
+          <TwitterIcon className="footer__social__icon" />
+        </a>
+        <a href="#">
+          <PinterestIcon className="footer__social__icon" />
+        </a>
       </div>
     </footer>
   );
