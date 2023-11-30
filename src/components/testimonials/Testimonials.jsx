@@ -1,26 +1,28 @@
 /* eslint-disable react/prop-types */
 import { emilyImage, thomasImage, jennieImage } from "../../assets/images";
 
+import "./Testimonials.css"
+
 const Feedback = ({ avatar, name, designation, message }) => {
   return (
-    <article className="flex flex-col items-center gap-8 md:max-w-xs md:mx-auto">
+    <article className="testimonials__feedback__article">
       <figure>
-        <img src={avatar} alt={name} className="w-[4.5rem] rounded-full" />
+        <img src={avatar} alt={name} className="testimonials__feedback__article__avatar" />
       </figure>
-      <p className="text-lg leading-8 text-DarkGrayishBlue">{message}</p>
-      <h4 className="font-Fraunces text-xl font-bold">{name}</h4>
-      <p className="-mt-6 text-sm text-GrayishBlue">{designation}</p>
+      <p className="testimonials__feedback__article__message">{message}</p>
+      <h4 className="testimonials__feedback__article__name">{name}</h4>
+      <p className="testimonials__feedback__article__designation">{designation}</p>
     </article>
   );
 };
 
 const Testimonials = () => {
   return (
-    <section className="px-6 pb-[5.5rem] pt-16 text-center">
-      <h3 className="font-Fraunces text-lg font-bold uppercase tracking-[.18em] text-GrayishBlue">
+    <section className="testimonials">
+      <h3 className="testimonials__heading">
         Client Testimonials
       </h3>
-      <div className="mt-14 flex flex-col gap-16 md:flex-row md:flex-wrap md:gap-10">
+      <div className="testimonials__feedback">
         <Feedback
           avatar={emilyImage}
           name="Emily R."

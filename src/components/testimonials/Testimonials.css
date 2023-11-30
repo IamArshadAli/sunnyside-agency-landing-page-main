@@ -1,0 +1,31 @@
+.testimonials {
+    @apply px-6 pb-[5.5rem] pt-16 text-center lg:py-40
+}
+
+.testimonials__heading { 
+    @apply font-Fraunces text-lg font-bold uppercase tracking-[.18em] text-GrayishBlue lg:text-[1.45rem] lg:tracking-[.15em]
+}
+
+.testimonials__feedback {
+    @apply mt-14 flex flex-col gap-16 md:flex-row md:flex-wrap md:gap-10 lg:flex-nowrap lg:mt-20 lg:gap-7 lg:justify-center
+}
+
+.testimonials__feedback__article {
+    @apply flex flex-col items-center gap-8 md:max-w-xs md:mx-auto lg:gap-14 lg:max-w-sm lg:mx-0
+}
+
+.testimonials__feedback__article__avatar {
+    @apply w-[4.5rem] rounded-full
+}
+
+.testimonials__feedback__article__message {
+    @apply text-lg leading-8 text-DarkGrayishBlue lg:max-w-[22rem]
+}
+
+.testimonials__feedback__article__name {
+    @apply font-Fraunces text-xl font-bold lg:mt-3 lg:-ml-4 lg:text-lg
+}
+
+.testimonials__feedback__article__designation {
+    @apply -mt-6 text-sm text-GrayishBlue lg:-mt-12 lg:-ml-4
+}
