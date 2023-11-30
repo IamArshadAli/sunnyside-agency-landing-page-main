@@ -1,0 +1,31 @@
+.header {
+    @apply absolute flex w-full items-center justify-between px-6 pt-8 lg:px-10
+}
+
+.header__logo {
+    @apply lg:w-[10.58rem]
+}
+
+.header__icon {
+    @apply h-5
+}
+
+.header__nav {
+    @apply flex flex-col items-center gap-7 md:flex-row lg:mt-[.1rem] lg:gap-12 lg:pr-2 lg:text-lg
+}
+
+.header__nav--text-white {
+    @apply text-White
+}
+
+.header__nav--mobile {
+    @apply absolute top-[6.65rem] right-6 w-full max-w-[20.45rem] items-center bg-White py-10 text-lg font-semibold text-DarkGrayishBlue after:absolute after:-top-6 after:right-0 after:h-0 after:w-0  after:border-r-[1.5rem] after:border-t-[1.5rem] after:border-r-White after:border-t-transparent
+}
+
+.header__nav__link {
+    @apply relative after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:rounded-full after:bg-Yellow after:transition after:ease-linear hover:after:scale-x-100
+}
+
+.header__nav__button {
+    @apply cursor-pointer rounded-full bg-Yellow px-8 py-5 font-Fraunces text-sm uppercase text-VeryDarkDesaturatedBlue transition-colors hover:bg-opacity-25 hover:text-White md:bg-White lg:px-[2.15rem] lg:py-[1.15rem]
+}
