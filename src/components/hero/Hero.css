@@ -1,0 +1,11 @@
+.hero {
+    @apply flex min-h-[33.65rem] flex-col items-center justify-center px-8 lg:min-h-[50rem]
+}
+
+.hero__title {
+    @apply my-2 text-center font-Fraunces text-4xl font-black uppercase leading-snug tracking-[.25em] text-White lg:-mt-[8.3rem] lg:text-[3.3rem] lg:tracking-[.211em]
+}
+
+.hero__icon {
+    @apply mt-10 lg:mt-[5.2rem]
+}
