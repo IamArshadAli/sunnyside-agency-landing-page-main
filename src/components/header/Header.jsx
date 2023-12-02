@@ -33,7 +33,7 @@ const NavLinks = ({ className }) => {
 const Header = () => {
   const [active, setActive] = useState(false);
   const isMobile = useMediaQuery({
-    query: "(max-width:640px)",
+    query: "(max-width:767px)",
   });
 
   return (
